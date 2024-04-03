@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    background-color: rgb(3, 113, 113);
+    padding: 20px 0;
+}
+
+.contener{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    /* background-color: blue; */
+    gap: 50px;
+}
+.trasform{
+    cursor: pointer;
+    width: 500px;
+    height: 350px;
+    border: 3px solid black;
+}
+.trasform img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.robart img:hover{
+    transform: rotate(-180deg);
+}
+.scale img:hover{
+    /* transform: scale(1.1); */
+    /* transform: scaleY(1.1); */
+    transform: scale(1.1);
+}
+.translate img:hover{
+    transform: translate(50px, -80px);
+    /* transform: translateY(50px); */
+   /* transform: translateY(50px); */
+
+}
+.skew img:hover{
+    transform: skew(30deg, 30deg);
+}
+.all img:hover{
+    transform: rotate(90deg) scale(1.2) skew(10deg) translate(-150px);
+}
+/*------------transition----------------*/
+.transition{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.transition:hover{
+    background-color: red;
+    transform: scale(1.2);
+    box-shadow: 0 0 14px gold;
+}
